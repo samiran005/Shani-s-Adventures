@@ -257,7 +257,7 @@ body {
 /* at 460px  */
 @media (max-width: 460px){  
     html {
-        font-size: 7px;
+        font-size: 8px;
     }
 
     #btn1 {
@@ -267,7 +267,7 @@ body {
         width: 40rem;
     }
     #logo-name {
-        font-size: 2.8rem;
+        font-size: 3rem;
     }
     #shani {
         font-size: 4rem;
