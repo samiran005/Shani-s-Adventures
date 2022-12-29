@@ -26,6 +26,17 @@ body {
     margin-right: 1.5rem;
 }
 
+#btn3 {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 9rem;
+    height: 3.7rem;
+    font-size: 2rem;
+    display: none;
+    
+}
+
 /************************ section one or first section *********************/
 
 /* for top section that has logo navigation bar  */
@@ -109,6 +120,7 @@ body {
 
 #right-section {
     width: 62rem;
+    margin-left: 20px;
 }
 
 #header-image {
@@ -118,8 +130,9 @@ body {
 
 /************************ section two or second section *********************/
 #section2 {
+    position: relative;
     width: 100%;
-    height: 500px;
+    height: 520px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 30% 70%;
@@ -177,7 +190,35 @@ body {
     background-color: #D687E3;
 }
 
+/* project info */
+.project-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70% 30%;
+}
+.project-info {
+    width: 25rem;
+    border-radius: 5rem 5rem 0 0;
+}
+.project-title {
+    padding: 0;
+    margin: 0;
+    width: 25rem;
+    border-radius: 0 0 5rem 5rem;
+}
 
+#project-title1 {
+    background: #5654E4;
+}
+#project-title2 {
+    background: #4868E9;
+}
+#project-title3 {
+    background: #8D4FF3;
+}
+#project-title4 {
+    background: #C854DB;
+}
 
 /******************** for responsiveness of website *******************/
 
@@ -257,7 +298,7 @@ body {
 /* at 460px  */
 @media (max-width: 460px){  
     html {
-        font-size: 8px;
+        font-size: 9px;
     }
 
     #btn1 {
@@ -267,13 +308,13 @@ body {
         width: 40rem;
     }
     #logo-name {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     #shani {
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
     #left-section h2 {
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
 }
 
@@ -294,6 +335,17 @@ body {
     #projects div {
         width: 23rem;
         height: 23rem;
+    }
+
+    #btn3 {
+        display: block;
+    }
+
+    .project-info {
+        width: 23rem;
+    }
+    .project-title {
+        width: 23rem;
     }
 
     #heading-for-projects h2 {
@@ -321,5 +373,12 @@ body {
 @media (max-width: 780px) {
     #project3 {
         display: none;
+    }
+}
+
+@media (max-width: 560px){
+    #section2 {
+        height: 800px;
+        grid-template-rows: 20% 80%;
     }
 }
