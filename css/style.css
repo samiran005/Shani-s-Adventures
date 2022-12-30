@@ -2,6 +2,9 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+:root {
+    --padding-left: 5rem;
+}
 html {
     font-size: 10px;
 }
@@ -9,6 +12,11 @@ body {
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
+
 
 .btn {
     width: 18rem;
@@ -46,7 +54,7 @@ body {
     height: 12rem;
     display: grid;
     grid-template-columns: 50% 50%;
-    padding: 0 5rem 0 5rem;
+    padding: 0 var(--padding-left) 0 var(--padding-left);
 }
 
 #logo {
@@ -99,7 +107,7 @@ body {
     width: 61rem;
     color: white;
     margin-top: 20%;
-    padding-left: 5rem;
+    padding-left: var(--padding-left);
 }
 #shani {
     font-size: 5.5rem;
@@ -220,6 +228,212 @@ body {
     background: #C854DB;
 }
 
+
+/************************ section three or third section *********************/
+
+#section3 {
+    position: relative;
+    width: 100%;
+    height: 65rem;
+}
+#trangle {
+    width: 100%;
+    height: 100%;
+    border-bottom: 65rem solid transparent;
+    border-left: 110rem solid #192337;
+}
+
+#about-container {
+    position: absolute;
+    width: 90%;
+    height: 85%;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+#about-heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 8rem;
+    width: 70%;
+}
+
+#about-info {
+    width: 70%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+span {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+/************************ section three or third section *********************/
+
+#section4 {
+    position: relative;
+    width: 100%;
+    height: 65rem;
+}
+#contact-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 80%;
+    background-color: white;
+    border: 2px solid #3E1F92;
+    border-radius: 50px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "leftbox rightbox";
+
+}
+.contact-heading {
+    position: relative;
+    background-color: #192337;
+    border-radius: 48px 0px 0px 48px;
+    color: white;
+    text-align: center;
+    grid-area: leftbox;
+}
+.contact-heading::after {
+    content: '';
+    position: absolute;
+    width: 14.9rem;
+    height: 14.9rem;
+    border-radius: 50%;
+    background-color: #7E53FA;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+.contact-heading::before {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: '';
+    width: 21.8rem;
+    height: 20rem;
+    background-color: #FA949D;
+    border-radius: 18.8rem 0px 0px 0px;
+}
+
+.contact-heading h2 {
+    font-size: 5rem;
+    font-weight: 500;
+    margin: 2rem 0 0 0 ;
+    padding: 0;
+}
+.contact-heading p {
+    font-size: 1.8rem;
+    width: 80%;
+    margin: auto;
+}
+
+#social-media {
+    width: 90%;
+}
+#social-media div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+}
+#social-media p {
+    margin: 0;
+    font-size: 1.8rem;
+    transform: translate(-85%,0);
+}
+
+.media-icon {
+    fill: white;
+    width: 3rem;
+}
+
+#form {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: rightbox;
+}
+
+#form div {
+    padding: 0 2rem 2rem 2rem;
+}
+
+#form label {
+    display: block;
+    font-size: 1.8rem;
+    padding: 0 0 0 3rem ;
+}
+
+
+#first {
+    grid-column: 1/2;
+}
+#last {
+    grid-column: 2/3;
+}
+#email {
+    grid-column: 1/3;
+}
+#subject {
+    grid-column: 1/3;
+}
+#description {
+    grid-column: 1/3;
+}
+#submit {
+    grid-column: 2/3;
+    justify-self: end;
+    margin: 0 2rem 0 0;
+    width: 12rem;
+    height: 5rem;
+    background-color: #192337;
+}
+
+
+#form input {
+    border-radius: 20px;
+    height: 4rem;
+    width: 100%;
+    padding: 0 2rem 0 2rem;
+    font-size: 1.8rem;
+}
+#email input {
+    width: 100%;
+}
+#subject input {
+    width: 100%;
+}
+#description-input {
+    width: 100%;
+    height: 10rem;
+    padding: 2rem;
+    font-size: 1.8rem;
+    border-radius: 20px;
+}
+
+
+
 /******************** for responsiveness of website *******************/
 
 /* section one or first section  */
@@ -325,6 +539,9 @@ body {
     #left-section {
         transform: translate(0,-10px);
     }
+    :root {
+        --padding-left: 2rem;
+    }
 }
 
 
@@ -382,3 +599,99 @@ body {
         grid-template-rows: 20% 80%;
     }
 }
+
+
+    /******************** for section three or third section *******************/
+
+@media (max-width: 979px) {
+    #trangle {
+        border-left: 70rem solid #192337;
+    }
+    #about-heading {
+        font-size: 6rem;
+    }
+    #about-info {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 780px) {
+    #trangle {
+        border-left: 20rem solid #192337;
+    }
+    #about-heading {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    #about-heading h2 {
+        margin: 0;
+        padding: 0;
+    }
+    #about-info {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    #about-info p {
+        margin: 0;
+        padding: 0;
+    }
+
+    #section3 {
+        height: 75rem;
+    }
+    #trangle {
+        border-bottom: 75rem solid transparent;
+    }
+
+}
+
+
+    /******************** for section three or third section *******************/
+
+@media (max-width: 979px) {
+    #social-media p {
+        font-size: 1.7rem;
+        transform: translate(-75%,0);
+    }
+    .media-icon {
+        width: 2.5rem;
+    }
+}
+
+@media (max-width: 780px) { 
+    #contact-container {
+        grid-template-areas: "leftbox leftbox"
+                            "rightbox rightbox";
+    }
+    .contact-heading {
+        border-radius: 48px 48px 0px 0px;
+    }
+    #social-media {
+        display: none;
+    }
+    #section4 {
+        height: 110rem;
+    }
+    #first {
+        grid-column: 1/3;
+    }
+    #last {
+        grid-column: 1/3;
+    }
+    .contact-heading::after {
+        width: 8.9rem;
+        height: 8.9rem;
+    }
+    .contact-heading::before {
+        width: 20%;
+        height: 40%;
+    }
+}
+
+@media (max-width: 560px) {
+    .contact-heading::before {
+        width: 30%;
+        height: 40%;
+    }
+}
+

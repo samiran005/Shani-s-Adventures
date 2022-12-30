@@ -22,9 +22,9 @@
         </div>
         <nav>
             <ul id="navigation">
-                <li class="nav-menu">Home</li>
-                <li class="nav-menu">Projects</li>
-                <li class="nav-menu">About Me</li>
+                <li class="nav-menu"><a href="#section1">Home</a></li>
+                <li class="nav-menu"><a href="#section2">Projects</a></li>
+                <li class="nav-menu"><a href="#section3">About Me</a></li>
                 <li class="nav-menu">Contact Me</li>
                 <div id="menu-bar">
                     <svg width="24" height="24" transform="scale(1.2, 1.2)">
@@ -48,8 +48,8 @@
                 solution that is elegant, efficient, and adaptable to
                 change.</p>
 
-            <input class="btn" id="btn1" type="button" value="About Me">
-            <input class="btn" type="button" value="Projects">
+            <button class="btn" id="btn1"><a href="#section3">About Me</a></button>
+            <button class="btn"><a href="#section2">Projects</a></button>
         </div>
 
         <!-- right-section of home page -->
@@ -85,6 +85,77 @@
                 <h3 class="project-title" id="project-title4"></h3>
             </div>
             <input class="btn" id="btn3" type="button" value="more...">
+        </div>
+    </section>
+
+
+    <!-- section three for projects -->
+    <section id="section3">
+        <div id="trangle"></div>
+        <div id="about-container">
+            <div id="about-info">
+                <p><span>Hi there,</span> <br> I am shani al though this is not my real name,
+                    but i use this name for all of my channels like youtube. <br><br>
+                    You might think i am a Web Devloper. Although I can make a website but I am a
+                    mechanical student. I learn web devlopment form online courses. <br><br>
+                    Some web development skills that i know are JavaScript, html, css,
+                    react.</p>
+            </div>
+            <div id="about-heading">
+                <h2>About Me</h2>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- section four for projects -->
+
+    <section id="section4">
+        <div id="contact-container">
+            <div class="contact-heading">
+                <h2>Contact Me</h2>
+                <p>Fill the form I will try to replay within 24 hour.</p>
+                <div id="social-media">
+                    <div>
+                        <svg class="media-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                        </svg>
+                        <p><a href="#" target="_blank">facebook</a></p>
+                    </div>
+                    <div>
+                        <svg class="media-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                        <p><a href="#" target="_blank">instagram</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="form">
+                <div id="first">
+                    <label for="first-name">First Name</label>
+                    <input type="text">
+                </div>
+                <div id="last">
+                    <label for="last-name">Last Name</label>
+                    <input type="text">
+                </div>
+                <div id="email">
+                    <label for="email">Email</label>
+                    <input type="text">
+                </div>
+                <div id="subject">
+                    <label for="subject">Subject</label>
+                    <input type="text">
+                </div>
+                <div id="description">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description-input" cols="30" rows="9"></textarea>
+                </div>
+                <button class="btn" id="submit"><a href="#">Sbumit</a></button>
+            </div>
         </div>
     </section>
 
